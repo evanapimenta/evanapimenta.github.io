@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico?v=2"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap" rel="stylesheet"> 
+
+        <meta charset="UTF-8">
+        <title>Simulado ENADE</title>
+
+        <style type="text/css">
+        </style>
+    </head>
+
+    <body>
+        <div class="container-blur" id="blur">
+            <div class="content">
+            <!-- HEADER -->
+            <header>
+                <a href="index.html">ENADE - TECNOLOGIA EM LOGÍSTICA (2015)</a>
+            </header>
+            <!-- NAVEGAÇÃO QUESTÕES -->
+            <nav>
+                <div class="navegacao-questoes">
+                    <button class="botao-nav" onclick="window.location.href='Q01.html'">1</button>
+                    <button class="botao-nav" onclick="window.location.href='Q02.html'">2</button>
+                    <button class="botao-nav" onclick="window.location.href='Q03.html'">3</button>
+                    <button class="botao-nav" onclick="window.location.href='Q04.html'" style="background-color: #1e2616;">4</button>
+                    <button class="botao-nav" onclick="window.location.href='Q05.html'">5</button>
+                    <button class="botao-nav" onclick="window.location.href='Q06.html'">6</button>
+                    <button class="botao-nav" onclick="window.location.href='Q07.html'">7</button>
+                    <button class="botao-nav" onclick="window.location.href='Q08.html'">8</button>
+                    <button class="botao-nav" onclick="window.location.href='Q09.html'">9</button>
+                    <button class="botao-nav" onclick="window.location.href='Q10.html'">10</button>
+                    <button class="botao-nav" onclick="window.location.href='Q11.html'">11</button>
+                    <button class="botao-nav" onclick="window.location.href='Q12.html'">12</button>
+                    <button class="botao-nav" onclick="window.location.href='Q13.html'">13</button>
+                    <button class="botao-nav" onclick="window.location.href='Q14.html'">14</button>
+                    <button class="botao-nav" onclick="window.location.href='Q15.html'">15</button>
+                    <button class="botao-nav" onclick="window.location.href='Q16.html'">16</button>
+                    <button class="botao-nav" onclick="window.location.href='Q17.html'">17</button>
+                    <button class="botao-nav" onclick="window.location.href='Q18.html'">18</button>
+                    <button class="botao-nav" onclick="window.location.href='Q19.html'">19</button>
+                    <button class="botao-nav" onclick="window.location.href='Q20.html'">20</button>
+                    <button class="botao-nav" onclick="window.location.href='Q21.html'">21</button>
+                    <button class="botao-nav" onclick="window.location.href='Q22.html'">22</button>
+                    <button class="botao-nav" onclick="window.location.href='Q23.html'">23</button>
+                    <button class="botao-nav" onclick="window.location.href='Q24.html'">24</button>
+                    <button class="botao-nav" onclick="window.location.href='Q25.html'">25</button>
+                    <button class="botao-nav" onclick="window.location.href='Q26.html'">26</button>
+                    <button class="botao-nav" onclick="window.location.href='Q27.html'">27</button>
+                    <button class="botao-nav" onclick="window.location.href='Q28.html'">28</button>
+                    <button class="botao-nav" onclick="window.location.href='Q29.html'">29</button>
+                    <button class="botao-nav" onclick="window.location.href='Q30.html'">30</button>
+                    <button class="botao-nav" onclick="window.location.href='Q31.html'">31</button>
+                    <button class="botao-nav" onclick="window.location.href='Q32.html'">32</button>
+                    <button class="botao-nav" onclick="window.location.href='Q33.html'">33</button>
+                    <button class="botao-nav" onclick="window.location.href='Q34.html'">34</button>
+                    <button class="botao-nav" onclick="window.location.href='Q35.html'">35</button>
+                </div>
+
+            <!-- QUESTÃO -->
+            <div class="area-questao">
+
+                <!-- IMAGEM -->
+                <div class="item-3">
+                    <h1 class="h1-questao">QUESTÃO 4</h1>
+                    <img id="img-questao" src="./img/IQA4.png" style="background-color: #FFF; padding: 20px 60px;">
+                </div>
+
+                <!-- PERGUNTA -->
+                <div class="item-4">
+                    <div>
+                        </div>
+                    <p style="color: #FFF;">A respeito dessas asserções, assinale a opção correta.</p>
+
+                    <button id="botao-alternativa" onclick="toggleErrada();">A. As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.</button>
+                    <button id="botao-alternativa" onclick="toggleCerta('abrir');">B. As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada();">C. A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada();">D. A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada();">E. As asserções I e II são proposições falsas.</button>
+                    <div>
+                    <button onclick="window.location.href='Q03.html'" class="botao-quatro">ANTERIOR</button>
+                    <button onclick="window.location.href='Q05.html'" class="botao-quatro">PRÓXIMA</button>
+                    <button onclick="window.location.href='gabarito.html'"class="botao-quatro">FINALIZAR</button>
+                    </div>
+                </div>
+            </div>
+
+                <div id="resultado-errada">
+                    <i class="fa-solid fa-circle-xmark" style="font-size: 45px; display: block;"></i>
+                    <h3 style="font-size: 30px; font-weight: 400;">VOCÊ ERROU!</h3>
+                    <p>A resposta correta é: B. As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.</p>
+                    <button onclick="toggleErrada()" class="botao-sair" style="width: 100px;">SAIR</button>
+                </div>
+
+                <div id="resultado-certa">
+                    <i class="fa-solid fa-circle-check" style="font-size: 45px; display: block;"></i>
+                    <h3 style="font-size: 30px; font-weight: 400;">VOCÊ ACERTOU!</h3>
+                    <button onclick="toggleCerta()" class="botao-sair" style="width: 100px;">SAIR</button>
+                </div>
+
+            </nav>
+
+            <!-- FOOTER -->
+            <footer>
+                <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="_blank" style="font-size: 0.9em;">ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</a><small>made with GRLPWR ❤</small>
+            </footer>
+        </div>
+    </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
