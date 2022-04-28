@@ -1,4 +1,3 @@
-//?? = nullish coalescing operator, google it 😋. Mas saiba que getItem retorna null caso o valor não exista
 let firstLoad =
 	localStorage.getItem('firstLoad') ?? localStorage.setItem('firstLoad', true);
 	const contErrada = parseInt(localStorage.getItem('contErrada')) - (parseInt(localStorage.getItem('contErrada')) / 2);
