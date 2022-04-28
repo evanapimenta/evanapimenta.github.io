@@ -63,11 +63,11 @@ function increaseCount(storageItem, value) {
 					data: [cont, contErrada],
 					backgroundColor: [
 						'rgba(48, 102, 61, 0.2)',
-						'rgba(54, 162, 235, 0.2)',
+						'rgba(255, 99, 132, 0.2)',
 					],
 					borderColor: [
 						'rgba(48, 102, 61, 1)',
-						'rgba(54, 162, 235, 1)',
+						'rgba(255, 99, 132, 1)',
 					],
 					borderWidth: 1
 				}]
