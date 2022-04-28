@@ -58,7 +58,7 @@ function increaseCount(storageItem, value) {
 			data: {
 				labels: ['Acertos', 'Erros'],
 				datasets: [{
-					label:'Acertos',
+					label:'Resultado',
 					data: [cont, contErrada],
 					backgroundColor: [
 						'rgba(48, 102, 61, 0.2)',
