@@ -88,6 +88,10 @@
                 background: linear-gradient(163deg, rgba(46,59,35,0.8855917366946778) 44%, rgba(84,105,64,1) 71%);
             }
 
+            button:disabled {
+                cursor: not-allowed;
+                pointer-events: all !important;
+            }
 
             /* CONTAINERS */
             .container-principal {
