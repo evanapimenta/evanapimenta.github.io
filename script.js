@@ -1,13 +1,12 @@
 let firstLoad =
 	localStorage.getItem('firstLoad') ?? localStorage.setItem('firstLoad', true);
-	const contErrada = parseInt(localStorage.getItem('contErrada')) - (parseInt(localStorage.getItem('contErrada')) / 2);
+	const contErrada = parseInt(localStorage.getItem('contErrada')) - (parseInt(localStorage.getItem('contErrada')) / 2) + (parseInt(localStorage.getItem('contErrada')) + (parseInt(localStorage.getItem('contErrada')) / 2) - 35);
 	const cont = parseInt(localStorage.getItem('cont'));
 
 // DOMContentLoaded = quando todos os elementos da página estiverem renderizados
 window.addEventListener('DOMContentLoaded', () => {
 	const isFirstLoad = localStorage.getItem('firstLoad');
 
-	//configura a storage e seta firstLoad para false, assim qnd acessar as outras páginas os valores não voltam pra 0 de novo. Comparando com string mesmo pq o JS é um cu.
 	if (isFirstLoad === 'true') {
 		console.log('[script.js] Test first load, setting storage');
 		localStorage.setItem('cont', 0);
