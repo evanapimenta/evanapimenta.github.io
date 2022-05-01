@@ -162,6 +162,8 @@
                 transition: 0.5s;
                 visibility: hidden;
                 opacity: 0;
+                max-height: 600px;
+                scroll-behavior: smooth;
             }
 
             #resultado-errada.active {
@@ -183,6 +185,8 @@
                 transition: 0.5s;
                 visibility: hidden;
                 opacity: 0;
+                max-height: 600px;
+                scroll-behavior: smooth;
             }
 
             #resultado-certa.active {
