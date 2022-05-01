@@ -1,6 +1,6 @@
 let firstLoad =
 	localStorage.getItem('firstLoad') ?? localStorage.setItem('firstLoad', true);
-	const contErrada = parseInt(localStorage.getItem('contErrada')) - (parseInt(localStorage.getItem('contErrada')) / 2) + (parseInt(localStorage.getItem('contErrada')) + (parseInt(localStorage.getItem('contErrada')) / 2) - 35);
+	const contErrada = parseInt(localStorage.getItem('contErrada')) - (parseInt(localStorage.getItem('contErrada')) / 2) + (parseInt(localStorage.getItem('cont')) + (parseInt(localStorage.getItem('contErrada')) / 2) - 35);
 	const cont = parseInt(localStorage.getItem('cont'));
 
 // DOMContentLoaded = quando todos os elementos da página estiverem renderizados
