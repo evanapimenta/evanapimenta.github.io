@@ -81,7 +81,7 @@
 
             function mostraResultado() {
                 const cont = parseInt(localStorage.getItem('cont'));
-                const errada = (parseInt(localStorage.getItem('contErrada')) - (parseInt(localStorage.getItem('contErrada')) / 2) + (35 - (parseInt(localStorage.getItem('cont')) + (parseInt(localStorage.getItem('contErrada')) / 2));
+                const errada = parseInt(localStorage.getItem('contErrada')) - (parseInt(localStorage.getItem('contErrada')) / 2) + (35 - (parseInt(localStorage.getItem('cont')) + (parseInt(localStorage.getItem('contErrada')) / 2));
 
                 document.getElementById('resultado').innerText = cont + '/35';
                 document.getElementById('resultado-errado').innerText = errada + '/35';
