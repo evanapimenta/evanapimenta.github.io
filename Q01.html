@@ -88,20 +88,22 @@
                     </div>
                 </div>
             </div>
-  
-                <div id="resultado-errada">
+
+                <div id="resultado-errada" style="overflow-y: scroll;">
                     <i class="fa-solid fa-circle-xmark" style="font-size: 45px; display: block;"></i>
-                    <h3 style="font-size: 30px; font-weight: 400;">VOCÊ ERROU!</h3>
+                    <h3 style="font-size: 20px; font-weight: 400;">VOCÊ ERROU!</h3>
                     <p>A resposta correta é: A. As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.</p>
                     
                     <p>I. Uma pessoa letrada digitamente tmem capacidade para localizar, filtrar e avaliar informação disponibilizada eletronicamente e para se comunicar com outras pessoas por meio de Tecologias de Informação e Comunicação.</p>
 
                     <p>II. No letramento digital, desenvolve-se a habilidade de construir sentidos a partir de textos que se conectam a outros textos, por meio de hipertextos, links e elementos imagéticos e sonoros.</p>
                     
+                    <div style="padding: 10px;"><img style="width: 600px; padding: 20px;" src="./img/graficoq1.PNG"></div>
+
                     <button onclick="toggleErrada()" class="botao-sair" style="width: 100px;">SAIR</button>
                 </div>
 
-                <div id="resultado-certa">
+                <div id="resultado-certa" style="overflow-y: scroll;">
                     <i class="fa-solid fa-circle-check" style="font-size: 45px; display: block;"></i>
                     <h3 style="font-size: 30px; font-weight: 400;">VOCÊ ACERTOU!</h3>
 
@@ -110,6 +112,9 @@
                     <p>I. Uma pessoa letrada digitamente tmem capacidade para localizar, filtrar e avaliar informação disponibilizada eletronicamente e para se comunicar com outras pessoas por meio de Tecologias de Informação e Comunicação.</p>
 
                     <p>II. No letramento digital, desenvolve-se a habilidade de construir sentidos a partir de textos que se conectam a outros textos, por meio de hipertextos, links e elementos imagéticos e sonoros.</p>
+                    
+                    <div style="padding: 10px;"><img style="width: 600px; padding: 20px;" src="./img/graficoq1.PNG"></div>
+
                     <button onclick="toggleCerta()" class="botao-sair" style="width: 100px;">SAIR</button>
                 </div>
 
@@ -123,5 +128,12 @@
         </div>
     </div>
         <script src="script.js"></script>
+        <script>
+
+if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+      alert("Não pode atualizar!!!");
+}
+
+        </script>
     </body>
     </html>
