@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico?v=2"/>
+        <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap" rel="stylesheet"> 
+        <script type="text/javascript" src="./script.js" defer></script>
+
+        <meta charset="UTF-8">
+        <title>Simulado ENADE</title>
+
+        <style type="text/css">
+
+        </style>
+    </head>
+
+    <body>
+            <!-- HEADER -->
+            <header>
+                <a href="index.html">ENADE - TECNOLOGIA EM LOGÍSTICA (2015)</a>
+            </header>
+
+        <main>
+            <section id="gabarito">
+                <br>
+                <br>
+                <div class="container" style="height: auto;">
+                    <!--div class="item-2"><img class="imagens" src="./img/corujalapis1.png" alt="" style="position: absolute; left: -20px; bottom: -80px; width: 30em;"></div>-->
+                    <div class="item-1" style="margin: auto; text-align: center;">
+
+                            <h2>PARABÉNS, VOCÊ FINALIZOU O SIMULADO!</h2>
+
+                            <div style="display: flex; flex-direction: row;">
+                                <div class="item-1">
+                                    <h3>SEUS ACERTOS:</h3>
+                                    <h2 style="font-size:60px;" id="resultado">0/35</h2>
+                                </div>
+                            
+                                <div class="item-1">
+                                    <h3>SEUS ERROS:</h3>
+
+                                    <h2 style="font-size:60px;" id="resultado-errado">0/35</h2>
+                                </div>
+
+                                <div class="item-1">
+                                    <h3>TOTAL RESPONDIDO:</h3>
+
+                                    <h2 style="font-size:60px;" id="resultado-total">0/35</h2>
+                                </div>
+
+
+                            </div>
+                        <h2>TOTAL DE ACERTOS E ERROS DO CANDIDATO</h2>
+                                <canvas id="grafico"></canvas>
+
+                                <div style="padding: 15px;"><p>Agradecemos a sua participação. Clique no botão <b>CRÉDITOS</b> ou <b>SOBRE</b> para conhecer mais sobre o projeto, e em <b>INÍCIO</b> para voltar à página inicial.</p></div>
+
+                        <div style="display: flex; justify-content: center;">
+                            <button class="botao-dois" onclick="window.location.href='sobre.html'" style="width: 110px;">SOBRE</button>
+                            <button class="botao-dois" onclick="window.location.href='creditos.html'" style="width: 110px;">CRÉDITOS</button>
+                            <button class="botao-dois" onclick="window.location.href='index.html'" style="width: 110px;">INÍCIO</button>
+                        </div>
+
+                        <hr>
+                        
+                        <div style="display: flex; justify-content: center; height: auto;">
+                            <a href="https://www.cps.sp.gov.br/" target="_blank"><img src="img/logocps.png" class="img-links" alt=""></a>
+                            <a href="http://www.fateccarapicuiba.edu.br/" target="_blank"><img src="img/logofatec.png" class="img-links" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="_blank" style="font-size: 0.9em;">ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</a> FATEC - EQUIPE 6 - 2022 <small>made with GRLPWR ❤</small>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+
+        <script>
+
+
+            function mostraResultado() {
+            const cont = parseInt(localStorage.getItem('cont'));
+	        const contErrada = parseInt(localStorage.getItem('contErrada')) - (parseInt(localStorage.getItem('contErrada')) / 2) + (35 - (parseInt(localStorage.getItem('cont')) + (parseInt(localStorage.getItem('contErrada')) / 2)));
+            const total = parseInt(localStorage.getItem('cont')) + (parseInt(localStorage.getItem('contErrada')) - (parseInt(localStorage.getItem('contErrada')) / 2)); 
+    
+            
+                document.getElementById('resultado').innerText = cont + '/35';
+                document.getElementById('resultado-errado').innerText = contErrada + '/35';
+                document.getElementById('resultado-total').innerText = total + '/35';
+
+                //reseta localStorage após resultados, assim começa a contagem do zero ao iniciar de novo
+                localStorage.setItem('firstLoad', true);
+            }
+            
+            mostraResultado();
+
+        </script>
+
+</body>
+</html>
