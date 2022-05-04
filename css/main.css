@@ -150,7 +150,8 @@
 
 
             #resultado-errada {
-                background-color: rgba(92, 30, 30, 0.9);
+                background: rgb(71,17,17);
+                background: linear-gradient(0deg, rgba(71,17,17,1) 0%, rgba(92,30,30,1) 66%);
                 position: fixed;
                 top: 40%;
                 left: 50%;
@@ -162,8 +163,10 @@
                 transition: 0.5s;
                 visibility: hidden;
                 opacity: 0;
-                max-height: 600px;
+                max-height: 450px;
                 scroll-behavior: smooth;
+                font-size: 15px;
+                overflow-y: scroll;
             }
 
             #resultado-errada.active {
@@ -173,7 +176,8 @@
             }
 
             #resultado-certa {
-                background-color: rgba(18, 36, 22, 0.9);
+                background: rgb(18,36,22, 0.9);
+                background: linear-gradient(0deg, rgba(18,36,22,1) 0%, rgba(33,66,41,1) 76%);
                 position: fixed;
                 top: 40%;
                 left: 50%;
@@ -185,8 +189,10 @@
                 transition: 0.5s;
                 visibility: hidden;
                 opacity: 0;
-                max-height: 600px;
+                max-height: 450px;
                 scroll-behavior: smooth;
+                font-size: 15px;
+                overflow-y: scroll;
             }
 
             #resultado-certa.active {

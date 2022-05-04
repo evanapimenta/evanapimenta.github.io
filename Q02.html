@@ -93,6 +93,20 @@
                     <i class="fa-solid fa-circle-xmark" style="font-size: 45px; display: block;"></i>
                     <h3 style="font-size: 30px; font-weight: 400;">VOCÊ ERROU!</h3>
                     <p>A resposta correta é: C. Sustenta-se em um conjunto de valores pautados pela isonomia no tratamento dos cidadãos.</p>
+                    
+
+                    <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
+
+                    <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
+
+                    <hr style="opacity: 0.2;">
+
+                    <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+
+                     <!--GRÁFICO-->
+                     <div><canvas id="grafico-questao1"></canvas></div>
+                     <!--FIM GRÁFICO-->
+
                     <button onclick="toggleErrada()" class="botao-sair" style="width: 100px;">SAIR</button>
                 </div>
 
@@ -101,6 +115,20 @@
                     <h3 style="font-size: 30px; font-weight: 400;">VOCÊ ACERTOU!</h3>
                     
                     <p>A resposta correta é: C. Sustenta-se em um conjunto de valores pautados pela isonomia no tratamento dos cidadãos.</p>
+
+    
+                    <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
+
+                    <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
+
+                    <hr style="opacity: 0.2;">
+
+                    <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+
+                     <!--GRÁFICO-->
+                     <div><canvas id="grafico-questao2"></canvas></div>
+                     <!--FIM GRÁFICO-->                
+
 
                     <button onclick="toggleCerta()" class="botao-sair" style="width: 100px;">SAIR</button>
                 </div>
@@ -114,5 +142,61 @@
         </div>
     </div>
         <script src="script.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+        <script>
+                //gráfico 1
+            const graficoMedia1 = document.getElementById("grafico-questao1").getContext('2d');
+            const dadosMedia1 = {
+                type: "bar",
+                data: {
+                    labels: ['A', 'B', 'C', 'D', 'E'],
+                    datasets: [
+                    {
+                        label:'Média de resposta por alternativa',
+                        data: [13, 0, 41.3, 37, 8.7],
+                        backgroundColor: [
+                            'rgba(48, 102, 61, 0.2)',
+                            'rgba(255, 99, 132, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(48, 102, 61, 1)',
+                            'rgba(255, 99, 132, 1)',
+                        ],
+                        borderWidth: 1
+                    }
+                ]
+                },
+                options: {}
+            }
+
+            const chartMedia1 = new Chart(graficoMedia1, dadosMedia1);
+
+                //gráfico 2
+            const graficoMedia2 = document.getElementById("grafico-questao2").getContext('2d');
+            const dadosMedia2 = {
+                type: "bar",
+                data: {
+                    labels: ['A', 'B', 'C', 'D', 'E'],
+                    datasets: [
+                    {
+                        label:'Média de resposta por alternativa',
+                        data: [13, 0, 41.3, 37, 8.7],
+                        backgroundColor: [
+                            'rgba(48, 102, 61, 0.2)',
+                            'rgba(255, 99, 132, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(48, 102, 61, 1)',
+                            'rgba(255, 99, 132, 1)',
+                        ],
+                        borderWidth: 1
+                    }
+                ]
+                },
+                options: {}
+            }
+
+            const chartMedia2 = new Chart(graficoMedia2, dadosMedia2);
+        </script>
     </body>
     </html>

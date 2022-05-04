@@ -100,6 +100,18 @@
                     <p>III. A melhoria e a facilitação de tarefas cotidianas das pessoas.</p>
 
                     <p>IV. A difusão do conhecimento tecnológico.</p>
+
+                    <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
+
+                    <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
+
+                    <hr style="opacity: 0.2;">
+
+                    <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+
+                     <!--GRÁFICO-->
+                     <div><canvas id="grafico-questao1"></canvas></div>
+                     <!--FIM GRÁFICO-->
                     
                     <button onclick="toggleErrada()" class="botao-sair" style="width: 100px;">SAIR</button>
                 </div>
@@ -115,6 +127,20 @@
                     <p>III. A melhoria e a facilitação de tarefas cotidianas das pessoas.</p>
 
                     <p>IV. A difusão do conhecimento tecnológico.</p>
+
+
+                    <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
+
+                    <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
+
+                    <hr style="opacity: 0.2;">
+
+                    <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+
+                     <!--GRÁFICO-->
+                     <div><canvas id="grafico-questao2"></canvas></div>
+                     <!--FIM GRÁFICO-->
+
                     <button onclick="toggleCerta()" class="botao-sair" style="width: 100px;">SAIR</button>
                 </div>
 
@@ -127,5 +153,62 @@
         </div>
     </div>
         <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+        <script>
+                //gráfico 1
+            const graficoMedia1 = document.getElementById("grafico-questao1").getContext('2d');
+            const dadosMedia1 = {
+                type: "bar",
+                data: {
+                    labels: ['A', 'B', 'C', 'D', 'E'],
+                    datasets: [
+                    {
+                        label:'Média de resposta por alternativa',
+                        data: [4.3, 10.9, 2.2, 69.6, 13],
+                        backgroundColor: [
+                            'rgba(48, 102, 61, 0.2)',
+                            'rgba(255, 99, 132, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(48, 102, 61, 1)',
+                            'rgba(255, 99, 132, 1)',
+                        ],
+                        borderWidth: 1
+                    }
+                ]
+                },
+                options: {}
+            }
+
+            const chartMedia1 = new Chart(graficoMedia1, dadosMedia1);
+
+                //gráfico 2
+            const graficoMedia2 = document.getElementById("grafico-questao2").getContext('2d');
+            const dadosMedia2 = {
+                type: "bar",
+                data: {
+                    labels: ['A', 'B', 'C', 'D', 'E'],
+                    datasets: [
+                    {
+                        label:'Média de resposta por alternativa',
+                        data: [4.3, 10.9, 2.2, 69.6, 13],
+                        backgroundColor: [
+                            'rgba(48, 102, 61, 0.2)',
+                            'rgba(255, 99, 132, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(48, 102, 61, 1)',
+                            'rgba(255, 99, 132, 1)',
+                        ],
+                        borderWidth: 1
+                    }
+                ]
+                },
+                options: {}
+            }
+
+            const chartMedia2 = new Chart(graficoMedia2, dadosMedia2);
+        </script>
+
     </body>
     </html>
