@@ -1,6 +1,6 @@
 let firstLoad =
 	localStorage.getItem('firstLoad') ?? localStorage.setItem('firstLoad', true);
-	const contErrada = parseInt(localStorage.getItem('contErrada')) - (parseInt(localStorage.getItem('contErrada')) / 2) + (35 - (parseInt(localStorage.getItem('cont')) + (parseInt(localStorage.getItem('contErrada')) / 2)));
+	const contErrada = parseInt(localStorage.getItem('contErrada')) + (35 - (parseInt(localStorage.getItem('cont')) + parseInt(localStorage.getItem('contErrada'))));
 	const cont = parseInt(localStorage.getItem('cont'));
 	const total = parseInt(localStorage.getItem('cont')) + (parseInt(localStorage.getItem('contErrada')) - (parseInt(localStorage.getItem('contErrada')) / 2)); 
 
@@ -20,9 +20,12 @@ window.addEventListener('DOMContentLoaded', () => {
 function toggleErrada(tipo) {
 	const errada = document.getElementById('resultado-errada');
 	errada.classList.toggle('active');
-
+	
+	if (tipo == 'fechar') {
 	let resultErrada = parseInt(localStorage.getItem('contErrada'));
 	increaseCount('contErrada', resultErrada);
+
+}
 
 	//desativa os botões, assim a pessoa não consegue clicar de novo numa alternativa e bagunçar os scores
 	document
@@ -75,4 +78,3 @@ function increaseCount(storageItem, value) {
 		}
 
 		const myChart = new Chart(grafico, dados);
-

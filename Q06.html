@@ -67,7 +67,7 @@
 
                 <!-- IMAGEM -->
                 <div class="item-3">
-                    <h1 class="h1-questao">QUESTÃO 6</h1>
+                    <h1 class="h1-questao">QUESTÃO 6/35</h1>
                     <img id="img-questao" src="./img/IQA6.png" style="background-color: #FFF; padding: 20px 60px;">
                 </div>
 
@@ -77,11 +77,11 @@
                         </div>
                     <p style="color: #FFF;">É correto apenas o que se afirma em</p>
 
-                    <button id="botao-alternativa" onclick="toggleErrada();">A. I e II.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">B. I e IV.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">C. I e III.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">A. I e II.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">B. I e IV.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">C. I e III.</button>
                     <button id="botao-alternativa" onclick="toggleCerta('abrir');">D. I, III e IV.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">E. II, III e IV.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">E. II, III e IV.</button>
 
                     <div>
                     <button onclick="window.location.href='Q07.html'" class="botao-quatro">PRÓXIMA</button>
@@ -108,6 +108,7 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao1"></canvas></div>
@@ -136,6 +137,7 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao2"></canvas></div>
@@ -166,12 +168,12 @@
                         label:'Média de resposta por alternativa',
                         data: [4.3, 10.9, 2.2, 69.6, 13],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }
@@ -193,12 +195,12 @@
                         label:'Média de resposta por alternativa',
                         data: [4.3, 10.9, 2.2, 69.6, 13],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }

@@ -77,11 +77,11 @@
                         </div>
                     <p style="color: #FFF;">Com base nesse fragmento de texto, infere-se que a sociedade moderna e democrática</p>
 
-                    <button id="botao-alternativa" onclick="toggleErrada();">A. Promove a anomia, ao garantir os direitos de minorias étnicas, de raça, de sexo ou de cor.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">B. Admite o pluralismo político, que pressupõe a promoção de algumas identidades étnicas em detrimento de outras.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">A. Promove a anomia, ao garantir os direitos de minorias étnicas, de raça, de sexo ou de cor.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">B. Admite o pluralismo político, que pressupõe a promoção de algumas identidades étnicas em detrimento de outras.</button>
                     <button id="botao-alternativa" onclick="toggleCerta('abrir');">C. Sustenta-se em um conjunto de valores pautados pela isonomia no tratamento dos cidadãos.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">D. Apoia-se em preceitos éticos e morais que fundamentam a completa relativização de valores.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">E. Adota preceitos éticos e morais incompatíveis com o pluralismo político.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">D. Apoia-se em preceitos éticos e morais que fundamentam a completa relativização de valores.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">E. Adota preceitos éticos e morais incompatíveis com o pluralismo político.</button>
                     <div>
                     <button onclick="window.location.href='Q03.html'" class="botao-quatro">PRÓXIMA</button>
                     <button onclick="window.location.href='gabarito.html'"class="botao-quatro">FINALIZAR</button>
@@ -102,6 +102,7 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao1"></canvas></div>
@@ -124,6 +125,7 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao2"></canvas></div>
@@ -155,12 +157,12 @@
                         label:'Média de resposta por alternativa',
                         data: [13, 0, 41.3, 37, 8.7],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }
@@ -182,12 +184,12 @@
                         label:'Média de resposta por alternativa',
                         data: [13, 0, 41.3, 37, 8.7],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }
