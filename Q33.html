@@ -77,11 +77,11 @@
                         </div>
                     <p style="color: #FFF;">É correto apenas o que se afirma em: </p>
 
-                    <button id="botao-alternativa" onclick="toggleErrada();">A. I e III.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">B. I e IV.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">C. II e III</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">A. I e III.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">B. I e IV.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">C. II e III</button>
                     <button id="botao-alternativa" onclick="toggleCerta('abrir');">D. II e IV.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">E. II e V</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">E. II e V</button>
 
                     <div>
                     <button onclick="window.location.href='Q34.html'" class="botao-quatro">PRÓXIMA</button>
@@ -95,6 +95,10 @@
                     <h3 style="font-size: 30px; font-weight: 400;">VOCÊ ERROU!</h3>
                     <p>A resposta correta é: D. II e IV.</p>
 
+                    <p>II. As quantidades pedidas são fixas, porém o tempo de reposição sofre variação.</p>
+
+                    <p>IV. O gráfico demonstra que o Lote de Reposição para o produto é 100, o Estoque de Segurança 25, e o Ponto de Pedido: 50.</p>
+
                     <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
 
                     <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
@@ -102,6 +106,8 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
+
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao1"></canvas></div>
@@ -116,6 +122,9 @@
 
                     <p>A resposta correta é: D. II e IV.</p>
 
+                    <p>II. As quantidades pedidas são fixas, porém o tempo de reposição sofre variação.</p>
+
+                    <p>IV. O gráfico demonstra que o Lote de Reposição para o produto é 100, o Estoque de Segurança 25, e o Ponto de Pedido: 50.</p>
                     <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
 
                     <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
@@ -123,6 +132,8 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
+
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao2"></canvas></div>
@@ -153,12 +164,12 @@
                         label:'Média de resposta por alternativa',
                         data: [30.4, 19.6, 13, 26.1, 10.9],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                          'rgba(28, 36, 21, 0.5)',
+                          'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                          'rgba(28, 36, 21, 1)',
+                          'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }
@@ -180,12 +191,12 @@
                         label:'Média de resposta por alternativa',
                         data: [30.4, 19.6, 13, 26.1, 10.9],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                          'rgba(28, 36, 21, 0.5)',
+                          'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                          'rgba(28, 36, 21, 1)',
+                          'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }

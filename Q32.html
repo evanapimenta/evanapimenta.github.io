@@ -67,7 +67,7 @@
 
                 <!-- IMAGEM -->
                 <div class="item-3">
-                    <h1 class="h1-questao">QUESTÃO 32</h1>
+                    <h1 class="h1-questao">QUESTÃO 32/35</h1>
                     <img id="img-questao" src="./img/IQA32.png" style="background-color: #FFF; padding: 20px 60px;">
                 </div>
 
@@ -77,11 +77,11 @@
                         </div>
                     <p style="color: #FFF;">É correto apenas o que se afirma em: </p>
 
-                    <button id="botao-alternativa" onclick="toggleErrada();">A. I, II e III</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">B. I, II e IV</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">A. I, II e III</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">B. I, II e IV</button>
                     <button id="botao-alternativa" onclick="toggleCerta('abrir');">C. I, IV e V</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">D. II, III e V</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">E. III, IV e V</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">D. II, III e V</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">E. III, IV e V</button>
 
                     <div>
                     <button onclick="window.location.href='Q33.html'" class="botao-quatro">PRÓXIMA</button>
@@ -95,6 +95,12 @@
                     <h3 style="font-size: 30px; font-weight: 400;">VOCÊ ERROU!</h3>
                     <p>A resposta correta é: C. I, IV e V</p>
 
+                    <p>I. A ferramenta de qualidade Folha de Verificação é adequada a uma empresa que precise controlar a frequência de atrasos durante o mês de seu principal fornecedor.</p>
+
+                    <p>IV. As ferramentas de qualidade, denominadas Cartas de Controle e Histogramas, são utilizadas para realizar o controle estatístico dos processos de uma empresa.</p>
+
+                    <p>V. A ferramenta de qualidade Estratificação foi a escolha adequada de uma organização que detectou que o maior número de acidentes ocorridos nos últimos seis meses estav a concentrado no turno da noite, no departamento caldeiraria.</p>
+
 
                     <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
 
@@ -103,6 +109,9 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: Gráfico elaborado pelas autoras e totalização por alternativa são dados fictícios.</em></small>
+
+
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao1"></canvas></div>
@@ -118,6 +127,12 @@
 
                     <p>A resposta correta é: C. I, IV e V</p>
 
+                    <p>I. A ferramenta de qualidade Folha de Verificação é adequada a uma empresa que precise controlar a frequência de atrasos durante o mês de seu principal fornecedor.</p>
+
+                    <p>IV. As ferramentas de qualidade, denominadas Cartas de Controle e Histogramas, são utilizadas para realizar o controle estatístico dos processos de uma empresa.</p>
+
+                    <p>V. A ferramenta de qualidade Estratificação foi a escolha adequada de uma organização que detectou que o maior número de acidentes ocorridos nos últimos seis meses estav a concentrado no turno da noite, no departamento caldeiraria.</p>
+
                     <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
 
                     <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
@@ -125,6 +140,9 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: Gráfico elaborado pelas autoras e totalização por alternativa são dados fictícios.</em></small>
+
+
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao2"></canvas></div>
@@ -155,12 +173,12 @@
                         label:'Média de resposta por alternativa',
                         data: [39.4, 0, 36.4, 3, 21.2],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                          'rgba(28, 36, 21, 0.5)',
+                          'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                          'rgba(28, 36, 21, 1)',
+                          'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }
@@ -182,12 +200,12 @@
                         label:'Média de resposta por alternativa',
                         data: [39.4, 0, 36.4, 3, 21.2],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                          'rgba(28, 36, 21, 0.5)',
+                          'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                          'rgba(28, 36, 21, 1)',
+                          'rgba(84, 105, 64, 1)'
                         ],
                         borderWidth: 1
                     }

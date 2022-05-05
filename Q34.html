@@ -67,7 +67,7 @@
 
                 <!-- IMAGEM -->
                 <div class="item-3">
-                    <h1 class="h1-questao">QUESTÃO 34</h1>
+                    <h1 class="h1-questao">QUESTÃO 34/35</h1>
                     <img id="img-questao" src="./img/IQA34.png" style="background-color: #FFF; padding: 20px 60px;">
                 </div>
 
@@ -78,10 +78,10 @@
                     <p style="color: #FFF;">A respeito dessas asserções, assinale a opção correta.</p>
 
                     <button id="botao-alternativa" onclick="toggleCerta('abrir');">A. As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">B. As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta de I.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">C. A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">D. A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">E. As asserções I e II são proposições falsas.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">B. As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta de I.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">C. A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">D. A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">E. As asserções I e II são proposições falsas.</button>
 
                     <div>
                     <button onclick="window.location.href='Q35.html'" class="botao-quatro">PRÓXIMA</button>
@@ -95,6 +95,12 @@
                     <h3 style="font-size: 30px; font-weight: 400;">VOCÊ ERROU!</h3>
                     <p>A resposta correta é: A. As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.</p>
 
+                    <p>I. A gestão da cadeia de suprimentos representa a integração externa das atividades de uma empresa, pois estende a coordenação dos fluxos de materiais e informações aos fornecedores e ao cliente final.</p>
+
+                                                      <p>PORQUE</p>
+
+                    <p>II. A gestão da cadeia de suprimentos é a coordenação estratégica e sistêMica das funções de negócios tradicionar e das ações táticas que perpaqssam essas funções em uma empresa e através de negócios, dentro da cadeia logística, com o propósito de aprimorar o desempenho de longo prazo dessa empresa e da cadeia de suprimento como um todo.</p>
+
 
                     <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
 
@@ -103,6 +109,8 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
+
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao1"></canvas></div>
@@ -117,6 +125,12 @@
 
                     <p>A resposta correta é: A. As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.</p>
 
+                    <p>I. A gestão da cadeia de suprimentos representa a integração externa das atividades de uma empresa, pois estende a coordenação dos fluxos de materiais e informações aos fornecedores e ao cliente final.</p>
+
+                                                      <p>PORQUE</p>
+
+                    <p>II. A gestão da cadeia de suprimentos é a coordenação estratégica e sistêMica das funções de negócios tradicionar e das ações táticas que perpaqssam essas funções em uma empresa e através de negócios, dentro da cadeia logística, com o propósito de aprimorar o desempenho de longo prazo dessa empresa e da cadeia de suprimento como um todo.</p>
+
                     <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
 
                     <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
@@ -124,6 +138,8 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
+
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao2"></canvas></div>
@@ -154,12 +170,12 @@
                         label:'Média de resposta por alternativa',
                         data: [21.7, 21.7, 15.2, 28.3, 10.9],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                          'rgba(28, 36, 21, 0.5)',
+                          'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                          'rgba(28, 36, 21, 1)',
+                          'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }
@@ -181,12 +197,12 @@
                         label:'Média de resposta por alternativa',
                         data: [21.7, 21.7, 15.2, 28.3, 10.9],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                          'rgba(28, 36, 21, 0.5)',
+                          'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                          'rgba(28, 36, 21, 1)',
+                          'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }

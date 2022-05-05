@@ -77,11 +77,11 @@
                         </div>
                     <p style="color: #FFF;">Estão corretos apenas os impactos descritos em:</p>
 
-                    <button id="botao-alternativa" onclick="toggleErrada();">A. I e II</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">B. I e IV</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">A. I e II</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">B. I e IV</button>
                     <button id="botao-alternativa" onclick="toggleCerta('abrir');">C.  II e III</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">D. I, III e IV</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">E.  II, III e IV
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">D. I, III e IV</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">E.  II, III e IV
                     </button>
 
                     <div>
@@ -96,6 +96,10 @@
                     <h3 style="font-size: 30px; font-weight: 400;">VOCÊ ERROU!</h3>
                     <p>A resposta correta é: C.  II e III</p>
 
+                    <p>II. Aumento da poluição por contaminação ou por excesso.</p>
+
+                    <p>III. Aumento crescente de devoluções de produtos.</p>
+
 
                     <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
 
@@ -104,6 +108,8 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: Gráfico elaborado pelas autoras e totalização por alternativa são dados fictícios.</em></small>
+
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao1"></canvas></div>
@@ -118,6 +124,10 @@
 
                     <p>A resposta correta é: C.  II e III</p>
 
+                    <p>II. Aumento da poluição por contaminação ou por excesso.</p>
+
+                    <p>III. Aumento crescente de devoluções de produtos.</p>
+
                     <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
 
                     <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
@@ -125,6 +135,8 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: Gráfico elaborado pelas autoras e totalização por alternativa são dados fictícios.</em></small>
+    
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao2"></canvas></div>
@@ -154,12 +166,12 @@
                         label:'Média de resposta por alternativa',
                         data: [6.1, 9.1, 39.4, 15.2, 30.3],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                          'rgba(28, 36, 21, 0.5)',
+                          'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                          'rgba(28, 36, 21, 1)',
+                          'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }
@@ -181,12 +193,12 @@
                         label:'Média de resposta por alternativa',
                         data: [6.1, 9.1, 39.4, 15.2, 30.3],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                          'rgba(28, 36, 21, 0.5)',
+                          'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                          'rgba(28, 36, 21, 1)',
+                          'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }
