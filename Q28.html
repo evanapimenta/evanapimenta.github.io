@@ -77,11 +77,11 @@
                         </div>
                     <p style="color: #FFF;"> Considerando o conceito Responsabilidade Social, bem como a situação hipotética apresentada,<br> é correto afirmar que a referida fábrica fere diretamente</p>
 
-                    <button id="botao-alternativa" onclick="toggleErrada();">A. os clientes, os acionistas, o governo e os fornecedores.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">B. o gerente executivo, os acionistas e os agentes de mercado.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">C. o que preconizam as organizações não governamentais que formam o terceiro setor do governo.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">A. os clientes, os acionistas, o governo e os fornecedores.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">B. o gerente executivo, os acionistas e os agentes de mercado.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">C. o que preconizam as organizações não governamentais que formam o terceiro setor do governo.</button>
                     <button id="botao-alternativa" onclick="toggleCerta('abrir');">D. a organização Mundial do Trabalho e as leis trabalhistas brasileiras.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">E. os demais funcionários, as pessoas que moram nas proximidades da unidade da empresa, os consumidores e o meio ambiente.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">E. os demais funcionários, as pessoas que moram nas proximidades da unidade da empresa, os consumidores e o meio ambiente.</button>
                     <div>
                     <button onclick="window.location.href='Q29.html'" class="botao-quatro">PRÓXIMA</button>
                     <button onclick="window.location.href='gabarito.html'"class="botao-quatro">FINALIZAR</button>
@@ -102,6 +102,7 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao1"></canvas></div>
@@ -121,6 +122,7 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao2"></canvas></div>
@@ -150,12 +152,12 @@
                         label:'Média de resposta por alternativa',
                         data: [11, 0, 0, 76.1, 13],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }
@@ -177,12 +179,12 @@
                         label:'Média de resposta por alternativa',
                         data: [11, 0, 0, 76.1, 13],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }

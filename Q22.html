@@ -77,12 +77,12 @@
                         </div>
                     <p style="color: #FFF;"> A respeito dessas asserções, assinale a opção correta.</p>
 
-                    <button id="botao-alternativa" onclick="toggleErrada();">A. As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">A. As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.
                     .</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">B. As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">B. As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.</button>
                     <button id="botao-alternativa" onclick="toggleCerta('abrir');">C. A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">D. A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">E. As asserções I e II são proposições falsas.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">D. A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">E. As asserções I e II são proposições falsas.</button>
                     <div>
                     <button onclick="window.location.href='Q23.html'" class="botao-quatro">PRÓXIMA</button>
                     <button onclick="window.location.href='gabarito.html'"class="botao-quatro">FINALIZAR</button>
@@ -105,6 +105,7 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: Gráfico elaborado pelas autoras e totalização por alternativa são dados fictícios.</em></small>
 
                     <div><canvas id="grafico-questao1"></canvas></div>
 
@@ -126,6 +127,7 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: Gráfico elaborado pelas autoras e totalização por alternativa são dados fictícios.</em></small>
 
                     <div><canvas id="grafico-questao2"></canvas></div>
 
@@ -154,12 +156,12 @@
                         label:'Média de resposta por alternativa',
                         data: [0, 3, 87.9, 9.1, 0],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }
@@ -181,12 +183,12 @@
                         label:'Média de resposta por alternativa',
                         data: [0, 3, 87.9, 9.1, 0],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }

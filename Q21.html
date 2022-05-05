@@ -77,10 +77,10 @@
                         </div>
                     <p style="color: #FFF;">  É correto o que se afirma em</p>
 
-                    <button id="botao-alternativa" onclick="toggleErrada();">A. I, apenas.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">B. II, apenas.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">C. I e III, apenas.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">D. II e III, apenas.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">A. I, apenas.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">B. II, apenas.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">C. I e III, apenas.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">D. II e III, apenas.</button>
                     <button id="botao-alternativa" onclick="toggleCerta('abrir');">E. I, II e III.</button>
 
                     <div>
@@ -97,6 +97,15 @@
                     <p>I.	Contempla a prevenção e a redução na geração de resíduos, tendo como proposta o consumo sustentável. </p>
                     <p>II.	Pode ser considerada um conjunto de instrumentos para propiciar o aumento da reciclagem, da reutilização e da destinação adequada de resíduos sólidos. </p>
                     <p>III.	Determina o cumprimento da obrigatoriedade da coleta seletiva. </p>
+                    <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
+
+                    <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
+
+                    <hr style="opacity: 0.2;">
+
+                    <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao1"></canvas></div>
@@ -113,7 +122,16 @@
                     <p>II.	Pode ser considerada um conjunto de instrumentos para propiciar o aumento da reciclagem, da reutilização e da destinação adequada de resíduos sólidos. </p>
                     <p>III.	Determina o cumprimento da obrigatoriedade da coleta seletiva. </p>
 
+                    <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
 
+                    <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
+
+                    <hr style="opacity: 0.2;">
+
+                    <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
+                    
                     <!--GRÁFICO-->
                      <div><canvas id="grafico-questao2"></canvas></div>
                      <!--FIM GRÁFICO-->
@@ -144,12 +162,12 @@
                     label:'Média de resposta por alternativa',
                     data: [9.1, 6.1, 3, 42.4, 39.4],
                     backgroundColor: [
-                        'rgba(48, 102, 61, 0.2)',
-                        'rgba(255, 99, 132, 0.2)',
-                    ],
-                    borderColor: [
-                        'rgba(48, 102, 61, 1)',
-                        'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
+                        ],
+                        borderColor: [
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                     ],
                     borderWidth: 1
                 }
@@ -172,12 +190,12 @@
                     label:'Média de resposta por alternativa',
                     data: [9.1, 6.1, 3, 42.4, 39.4],
                     backgroundColor: [
-                        'rgba(48, 102, 61, 0.2)',
-                        'rgba(255, 99, 132, 0.2)',
-                    ],
-                    borderColor: [
-                        'rgba(48, 102, 61, 1)',
-                        'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
+                        ],
+                        borderColor: [
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                     ],
                     borderWidth: 1
                 }

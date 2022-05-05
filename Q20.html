@@ -78,10 +78,10 @@
                     <p style="color: #FFF;"> A respeito dessas asserções, assinale a alternativa correta.</p>
 
                     <button id="botao-alternativa" onclick="toggleCerta('abrir');">A. As asserções I e II são proposições verdadeiras, e a II é justificativa correta da I.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">B. As asserções I e II são proposições verdadeiras, mas a II não é justificativa correta da I.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">C. A asserção I é uma proposição verdadeira, e a II é uma asserção falsa.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">D. A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">E. As asserções I e II são proposições falsas.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">B. As asserções I e II são proposições verdadeiras, mas a II não é justificativa correta da I.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">C. A asserção I é uma proposição verdadeira, e a II é uma asserção falsa.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">D. A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">E. As asserções I e II são proposições falsas.</button>
 
                     <div>
                     <button onclick="window.location.href='Q21.html'" class="botao-quatro">PRÓXIMA</button>
@@ -97,6 +97,16 @@
                     <p>I.	Externalidades positivas levam os concorrentes a se localizarem próximos uns dos outros. </p>
                     <p>II.	São considerados externalidades positivas casos em que  a vizinhança de múltiplas empresas produz benefício a todas elas. </p>
 
+                    <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
+
+                    <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
+
+                    <hr style="opacity: 0.2;">
+
+                    <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
+
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao1"></canvas></div>
                      <!--FIM GRÁFICO-->
@@ -110,6 +120,16 @@
                     <p>A resposta correta é: A. As asserções I e II são proposições verdadeiras, e a II é justificativa correta da I.</p>
                     <p>I.	Externalidades positivas levam os concorrentes a se localizarem próximos uns dos outros. </p>
                     <p>II.	São considerados externalidades positivas casos em que  a vizinhança de múltiplas empresas produz benefício a todas elas. </p>
+                    
+                    <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
+
+                    <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
+
+                    <hr style="opacity: 0.2;">
+
+                    <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao2"></canvas></div>
@@ -140,12 +160,12 @@
                         label:'Média de resposta por alternativa',
                         data: [7, 17.4, 15.2, 13, 47.8],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }
@@ -167,12 +187,12 @@
                         label:'Média de resposta por alternativa',
                         data: [7, 17.4, 15.2, 13, 47.8],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }

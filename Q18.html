@@ -78,10 +78,10 @@
                     <p style="color: #FFF;"> Com base nas regras de compra e venda de mercadoria estabelecida pelos Incoterms para<br> operações de comércio internacional, assinale a alternativa correta acerca<br> da interpretação da Incoterm FCA (Free Carrier) na versão 2010.</p><br>
 
                     <button id="botao-alternativa" onclick="toggleCerta('abrir');">A. O vendedor cumpre sua obrigação de entrega quando encaminha as mercadorias, liberadas para exportação ao transportador, tendo este sido nomeado pelo comprador , no local ou ponto determinado.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">B. O vendedor completa suas obrigações e encerra sua responsabilidade quando a mercadoria é colocada a disposição do comprador, na data ou no período acordado, em um terminal de destino designado, descarregada do veículo transportador, mas o desembaraço para importação não é de sua responsabilidade.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">C. O vendedor cumpre sua obrigação ao colocar a mercadoria à disposição do comprador em seu domicílio no prazo estabelecido, não sendo sua responsabilidade o desembaraço para a exportação nem o carregamento da mercadoria em veículos coletores.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">D. O vendedor completa suas obrigações ao pagar o frete pelo transporte das mercadorias até o destino designado, transferido o risco por perdas ou danos às mercadorias, bem como quaisquer despesas adicionais devidas e eventos que ocorram após a entrega das mercadorias ao transportador, que passa a deter sua custódia.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">E. O vendedor completa suas obrigações e encerra sua responsabilidade quando a mercadoria é colocada à disposição do comprador, na data ou no período acordado no local de destino designado no país importador, sem descarregá-la do meio de transporte, assumindo, além do desembaraço todos os riscos e custos, inclusive impostos, taxas e outros encargos incidentes na transportação.
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">B. O vendedor completa suas obrigações e encerra sua responsabilidade quando a mercadoria é colocada a disposição do comprador, na data ou no período acordado, em um terminal de destino designado, descarregada do veículo transportador, mas o desembaraço para importação não é de sua responsabilidade.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">C. O vendedor cumpre sua obrigação ao colocar a mercadoria à disposição do comprador em seu domicílio no prazo estabelecido, não sendo sua responsabilidade o desembaraço para a exportação nem o carregamento da mercadoria em veículos coletores.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">D. O vendedor completa suas obrigações ao pagar o frete pelo transporte das mercadorias até o destino designado, transferido o risco por perdas ou danos às mercadorias, bem como quaisquer despesas adicionais devidas e eventos que ocorram após a entrega das mercadorias ao transportador, que passa a deter sua custódia.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">E. O vendedor completa suas obrigações e encerra sua responsabilidade quando a mercadoria é colocada à disposição do comprador, na data ou no período acordado no local de destino designado no país importador, sem descarregá-la do meio de transporte, assumindo, além do desembaraço todos os riscos e custos, inclusive impostos, taxas e outros encargos incidentes na transportação.
                     </button>
 
                     <div>
@@ -95,6 +95,16 @@
                     <i class="fa-solid fa-circle-xmark" style="font-size: 45px; display: block;"></i>
                     <h3 style="font-size: 30px; font-weight: 400;">VOCÊ ERROU!</h3>
                     <p>A resposta correta é: A. O vendedor cumpre sua obrigação de entrega quando encaminha as mercadorias, liberadas para exportação ao transportador, tendo este sido nomeado pelo comprador, no local ou ponto determinado.</p>
+
+                    <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
+
+                    <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
+
+                    <hr style="opacity: 0.2;">
+
+                    <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+
+                    <small><em>Fonte: Gráfico elaborado pelas autoras e totalização por alternativa são dados fictícios.</em></small>
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao1"></canvas></div>
@@ -110,6 +120,15 @@
 
                     <p>A resposta correta é: A. O vendedor cumpre sua obrigação de entrega quando encaminha as mercadorias, liberadas para exportação ao transportador, tendo este sido nomeado pelo comprador, no local ou ponto determinado.</p>
 
+                    <!-- COPIAR A PARTIR DAQUI E COLAR EM TODAS AS PÁGINAS (APÓS OS ITENS)-->
+
+                    <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
+
+                    <hr style="opacity: 0.2;">
+
+                    <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    
+                    <small><em>Fonte: Gráfico elaborado pelas autoras e totalização por alternativa são dados fictícios.</em></small>
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao2"></canvas></div>
@@ -140,12 +159,12 @@
                     label:'Média de resposta por alternativa',
                     data: [47.8, 23.9, 4.3, 0, 23.9],
                     backgroundColor: [
-                        'rgba(48, 102, 61, 0.2)',
-                        'rgba(255, 99, 132, 0.2)',
-                    ],
-                    borderColor: [
-                        'rgba(48, 102, 61, 1)',
-                        'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
+                        ],
+                        borderColor: [
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                     ],
                     borderWidth: 1
                 }
@@ -166,12 +185,12 @@
                     label:'Média de resposta por alternativa',
                     data: [47.8, 23.9, 4.3, 0, 23.9],
                     backgroundColor: [
-                        'rgba(48, 102, 61, 0.2)',
-                        'rgba(255, 99, 132, 0.2)',
-                    ],
-                    borderColor: [
-                        'rgba(48, 102, 61, 1)',
-                        'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
+                        ],
+                        borderColor: [
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                     ],
                     borderWidth: 1
                 }

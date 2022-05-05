@@ -76,11 +76,11 @@
                         </div>
                     <p style="color: #FFF;">  É correto apenas o que se afirma em</p>
 
-                    <button id="botao-alternativa" onclick="toggleErrada();">A. I</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">B. II e III</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">A. I</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">B. II e III</button>
                     <button id="botao-alternativa" onclick="toggleCerta('abrir');">C.  II e IV</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">D. III e IV</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">E. I, IV e V.
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">D. III e IV</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">E. I, IV e V.
                     </button>
 
                     <div>
@@ -110,6 +110,7 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao1"></canvas></div>
@@ -136,6 +137,7 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
 
                     <!-- FIM CÓPIA -->
 
@@ -170,12 +172,12 @@
                         label:'Média de resposta por alternativa',
                         data: [0, 0, 47.8, 2.2, 50],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }
@@ -197,12 +199,12 @@
                         label:'Média de resposta por alternativa',
                         data: [0, 0, 47.8, 2.2, 50],
                         backgroundColor: [
-                            'rgba(48, 102, 61, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
                         ],
                         borderColor: [
-                            'rgba(48, 102, 61, 1)',
-                            'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                         ],
                         borderWidth: 1
                     }

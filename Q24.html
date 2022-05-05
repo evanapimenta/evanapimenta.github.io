@@ -77,12 +77,12 @@
                         </div>
                     <p style="color: #FFF;"> Considerando essa situação hipotética e os dados apresentados, é correto concluir que a empresa deverá</p>
 
-                    <button id="botao-alternativa" onclick="toggleErrada();">A. minimizar a responsividade do pós-venda, do follow up e da troca de produtos incorretos.
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">A. minimizar a responsividade do pós-venda, do follow up e da troca de produtos incorretos.
                     .</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">B. extinguir a área de pós-vendas, uma vez que ela não contribui para os objetivos planejados.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">C. aumentar o tempo de lançamento dos produtos ao mercado, pois essa variável gera um impacto bom.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">B. extinguir a área de pós-vendas, uma vez que ela não contribui para os objetivos planejados.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">C. aumentar o tempo de lançamento dos produtos ao mercado, pois essa variável gera um impacto bom.</button>
                     <button id="botao-alternativa" onclick="toggleCerta('abrir');">D. criar um departamento de logística reversa, visto que as variáveis mais problemáticas estão associadas a ela.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">E. reduzir a variedade de produtos, pois o impacto que essa variável gera é insignificante para uma cadeia de suprimentos.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">E. reduzir a variedade de produtos, pois o impacto que essa variável gera é insignificante para uma cadeia de suprimentos.</button>
                     <div>
                     <button onclick="window.location.href='Q25.html'" class="botao-quatro">PRÓXIMA</button>
                     <button onclick="window.location.href='gabarito.html'"class="botao-quatro">FINALIZAR</button>
@@ -103,6 +103,7 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao1"></canvas></div>
@@ -124,6 +125,7 @@
                     <hr style="opacity: 0.2;">
 
                     <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
 
                      <!--GRÁFICO-->
                      <div><canvas id="grafico-questao2"></canvas></div>
@@ -154,12 +156,12 @@
                     label:'Média de resposta por alternativa',
                     data: [19.6, 2.2, 2.2, 71.7, 2.2],
                     backgroundColor: [
-                        'rgba(48, 102, 61, 0.2)',
-                        'rgba(255, 99, 132, 0.2)',
-                    ],
-                    borderColor: [
-                        'rgba(48, 102, 61, 1)',
-                        'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
+                        ],
+                        borderColor: [
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                     ],
                     borderWidth: 1
                 }
@@ -181,12 +183,12 @@
                     label:'Média de resposta por alternativa',
                     data: [19.6, 2.2, 2.2, 71.7, 2.2],
                     backgroundColor: [
-                        'rgba(48, 102, 61, 0.2)',
-                        'rgba(255, 99, 132, 0.2)',
-                    ],
-                    borderColor: [
-                        'rgba(48, 102, 61, 1)',
-                        'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
+                        ],
+                        borderColor: [
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                     ],
                     borderWidth: 1
                 }

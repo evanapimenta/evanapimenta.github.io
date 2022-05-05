@@ -78,10 +78,10 @@
                     <p style="color: #FFF;">  A respeito dessas asserções, assinale a opção correta</p>
 
                     <button id="botao-alternativa" onclick="toggleCerta('abrir');">A. As asserções I e II são proposições verdadeiras, a e II é justificativa da I.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">B. As asserções I e II são proposições verdadeiras, mas a II não é justificativa correta da I.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">C. A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">D. A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.</button>
-                    <button id="botao-alternativa" onclick="toggleErrada();">E. As asserções I e II são proposições falsas.
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">B. As asserções I e II são proposições verdadeiras, mas a II não é justificativa correta da I.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">C. A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">D. A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.</button>
+                    <button id="botao-alternativa" onclick="toggleErrada('fechar');">E. As asserções I e II são proposições falsas.
                     </button>
 
                     <div>
@@ -100,7 +100,15 @@
                     <p>II.	No sistema Just in Time, com a redução de tempo gasto na nova preparação/ajustes do equipamento, o
                           estoque médio diminui.</p>
 
-                          <div><canvas id="grafico-questao1"></canvas></div>
+                    <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
+
+                    <hr style="opacity: 0.2;">
+
+                    <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
+
+                    <div><canvas id="grafico-questao1"></canvas></div>
 
                           <button onclick="toggleErrada()" class="botao-sair" style="width: 100px;">SAIR</button>
                 </div>
@@ -109,10 +117,18 @@
                     <i class="fa-solid fa-circle-check" style="font-size: 45px; display: block;"></i>
                     <h3 style="font-size: 30px; font-weight: 400;">VOCÊ ACERTOU!</h3>
                     <p>A resposta correta é: A. As asserções I e II são proposições verdadeiras, a e II é justificativa da I.</p>
-                    <p>I.	Nos sistemas de produção Just in Time, procura-se reduzir o tempo gasto na nova preparação/ajustes do
+                    <p>I. Nos sistemas de produção Just in Time, procura-se reduzir o tempo gasto na nova preparação/ajustes do
                          equipamento até o instante em que a produção é liberada. </p>
-                    <p>II.	No sistema Just in Time, com a redução de tempo gasto na nova preparação/ajustes do equipamento, o
+                    <p>II. No sistema Just in Time, com a redução de tempo gasto na nova preparação/ajustes do equipamento, o
                           estoque médio diminui.</p>
+
+                    <p>Rolando esse pop-up, há um gráfico contendo as estatísticas para média de escolha de examinandos anteriores por alternativa. Abaixo das estatísticas, há o botão <b>SAIR</b> que fecha esta janela.</p>
+
+                    <hr style="opacity: 0.2;">
+
+                    <h3>ESTATÍSTICAS - MÉDIA DE ESCOLHA POR ALTERNATIVA</h3>
+
+                    <small><em>Fonte: <a href="https://enade.inep.gov.br/enade/#!/relatorioCursos">https://enade.inep.gov.br/enade/#!/relatorioCursos</a></em></small>
 
                         <div><canvas id="grafico-questao2"></canvas></div>
 
@@ -144,12 +160,12 @@
                     label:'Média de resposta por alternativa',
                     data: [78.8, 6.1, 3, 12.1, 0],
                     backgroundColor: [
-                        'rgba(48, 102, 61, 0.2)',
-                        'rgba(255, 99, 132, 0.2)',
-                    ],
-                    borderColor: [
-                        'rgba(48, 102, 61, 1)',
-                        'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
+                        ],
+                        borderColor: [
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                     ],
                     borderWidth: 1
                 }
@@ -171,12 +187,12 @@
                     label:'Média de resposta por alternativa',
                     data: [78.8, 6.1, 3, 12.1, 0],
                     backgroundColor: [
-                        'rgba(48, 102, 61, 0.2)',
-                        'rgba(255, 99, 132, 0.2)',
-                    ],
-                    borderColor: [
-                        'rgba(48, 102, 61, 1)',
-                        'rgba(255, 99, 132, 1)',
+                            'rgba(28, 36, 21, 0.5)',
+                            'rgba(84, 105, 64, 0.5)',
+                        ],
+                        borderColor: [
+                            'rgba(28, 36, 21, 1)',
+                            'rgba(84, 105, 64, 1)',
                     ],
                     borderWidth: 1
                 }
