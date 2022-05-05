@@ -176,8 +176,7 @@
             }
 
             #resultado-certa {
-                background: rgb(18,36,22, 0.9);
-                background: linear-gradient(0deg, rgba(18,36,22,1) 0%, rgba(33,66,41,1) 76%);
+                background: rgba(18,36,22,1);
                 position: fixed;
                 top: 40%;
                 left: 50%;
